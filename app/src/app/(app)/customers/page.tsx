@@ -95,7 +95,7 @@ export default async function CustomersPage() {
                       {fmtDate(c.last_visit)}
                       {c.service_flags > 0 && (
                         <small className="flag-line">
-                          {c.service_flags} {c.service_flags === 1 ? "unit needs" : "units need"} service
+                          {c.service_flags} needs service
                         </small>
                       )}
                     </td>

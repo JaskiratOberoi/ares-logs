@@ -113,6 +113,12 @@
   white-space: pre-line;
 }
 
+.work[data-open] .time {
+  display: none;
+}
 .work[data-open] :global(table.board .name) {
-  font-size: 15px;
+  font-size: 16px;
+}
+.work[data-open] .visitedCol {
+  width: 118px !important;
 }

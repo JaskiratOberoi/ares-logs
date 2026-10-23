@@ -80,7 +80,7 @@ export const PURPOSES: { value: Purpose; label: string }[] = [
 ];
 
 export const INSTRUMENT_STATUSES: { value: InstrumentStatus; label: string; short: string }[] = [
-  { value: "ares_installed", label: "Ares installed", short: "ARES" },
+  { value: "ares_installed", label: "Ares installed", short: "INST" },
   { value: "competitor", label: "Competitor unit", short: "COMP" },
   { value: "demo_unit", label: "Demo unit", short: "DEMO" },
   { value: "new_install", label: "New install", short: "NEW" },

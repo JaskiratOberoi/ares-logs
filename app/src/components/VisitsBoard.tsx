@@ -97,10 +97,10 @@ export function VisitsBoard({
             <colgroup>
               <col style={{ width: 84 }} />
               <col />
-              <col className={styles.optional} style={{ width: "16%" }} />
-              <col style={{ width: "15%" }} />
+              <col className={styles.optional} style={{ width: "15%" }} />
+              <col style={{ width: "17%" }} />
               <col className={styles.optional} style={{ width: 70 }} />
-              <col style={{ width: 150 }} />
+              <col className={styles.visitedCol} style={{ width: 150 }} />
               <col style={{ width: 40 }} />
             </colgroup>
             <thead>
@@ -152,7 +152,7 @@ export function VisitsBoard({
                       {purposeLabel(v.purpose)}
                       {v.service_count > 0 && (
                         <small className="flag-line">
-                          {v.service_count} {v.service_count === 1 ? "unit needs" : "units need"} service
+                          {v.service_count} needs service
                         </small>
                       )}
                     </td>
@@ -200,7 +200,8 @@ export function VisitsBoard({
                 {fmtDateTime(selected.visited_at)}
               </p>
               <p className="blade-code">
-                {customerType(selected.customer_type).label} · {visitCode(selected.seq)}
+                <span className="mono">{visitCode(selected.seq)}</span>
+                {user.role === "manager" && <span>filed by {selected.rep_name}</span>}
               </p>
             </div>
             <div className={styles.facts}>

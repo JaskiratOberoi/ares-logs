@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink, Pencil } from "lucide-react";
 import { requireSession } from "@/lib/auth";
 import { getVisit, listPhotos } from "@/lib/visits";
-import { customerType, purposeLabel } from "@/lib/types";
+import { purposeLabel } from "@/lib/types";
 import { deptVar, fmtDate, fmtDateTime, fmtTime, isOverdue, visitCode } from "@/lib/format";
 import { VisitPhotos } from "@/components/VisitPhotos";
 import { DeleteVisit } from "@/components/DeleteVisit";
@@ -27,7 +27,6 @@ export default async function VisitPage({ params }: { params: Promise<{ id: stri
   if (!visit) notFound();
   const photos = listPhotos(id);
   const canEdit = user.role === "manager" || visit.rep_id === user.id;
-  const ct = customerType(visit.customer_type);
   const grade = visit.lat != null ? accuracyGrade(visit.accuracy_m) : null;
 
   return (
@@ -55,8 +54,8 @@ export default async function VisitPage({ params }: { params: Promise<{ id: stri
           {fmtDateTime(visit.visited_at)}
         </p>
         <p className="blade-code">
-          {ct.label} · {visitCode(visit.seq)}
-          {user.role === "manager" ? ` · filed by ${visit.rep_name}` : ""}
+          <span className="mono">{visitCode(visit.seq)}</span>
+          {user.role === "manager" && <span>filed by {visit.rep_name}</span>}
         </p>
       </header>
 

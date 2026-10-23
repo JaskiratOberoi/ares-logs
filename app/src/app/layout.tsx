@@ -37,7 +37,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${overpass.variable} ${overpassMono.variable} ${michroma.variable}`}>
+    <html lang="en-IN" className={`${overpass.variable} ${overpassMono.variable} ${michroma.variable}`}>
       <body>{children}</body>
     </html>
   );
