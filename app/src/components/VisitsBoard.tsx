@@ -97,10 +97,10 @@ export function VisitsBoard({
             <colgroup>
               <col style={{ width: 84 }} />
               <col />
-              <col className={styles.optional} style={{ width: "15%" }} />
-              <col style={{ width: "17%" }} />
-              <col className={styles.optional} style={{ width: 70 }} />
-              <col className={styles.visitedCol} style={{ width: 150 }} />
+              <col className={`${styles.optional} ${styles.contactCol}`} style={{ width: "13%" }} />
+              <col className={styles.purposeCol} style={{ width: "15%" }} />
+              <col className={styles.optional} style={{ width: 48 }} />
+              <col className={styles.visitedCol} style={{ width: 180 }} />
               <col style={{ width: 40 }} />
             </colgroup>
             <thead>
@@ -139,7 +139,7 @@ export function VisitsBoard({
                         {ct.code}
                       </span>
                     </td>
-                    <td>
+                    <td title={v.customer_name}>
                       <div className="name">
                         {v.customer_name}
                         <small>
@@ -147,8 +147,10 @@ export function VisitsBoard({
                         </small>
                       </div>
                     </td>
-                    <td className={styles.optional}>{v.contact_name || <span style={{ color: "var(--ink-3)" }}>No contact</span>}</td>
-                    <td>
+                    <td className={styles.optional} title={v.contact_name || undefined}>
+                      {v.contact_name || <span style={{ color: "var(--ink-3)" }}>No contact</span>}
+                    </td>
+                    <td title={purposeLabel(v.purpose)}>
                       {purposeLabel(v.purpose)}
                       {v.service_count > 0 && (
                         <small className="flag-line">

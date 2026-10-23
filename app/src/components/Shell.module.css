@@ -85,15 +85,15 @@
   margin-top: auto;
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 18px 20px 18px 24px;
+  gap: 10px;
+  padding: 16px 14px 16px 18px;
   border-top: 1px solid var(--rail-2);
   font-size: 12px;
   color: var(--rail-muted);
 }
 .avatar {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   flex: none;
   display: grid;
   place-items: center;

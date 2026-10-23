@@ -6,7 +6,7 @@
   flex: 1;
 }
 .work[data-open] {
-  grid-template-columns: minmax(0, 1fr) 440px;
+  grid-template-columns: minmax(0, 1fr) 400px;
 }
 
 @media (max-width: 1100px) {
@@ -120,5 +120,11 @@
   font-size: 16px;
 }
 .work[data-open] .visitedCol {
-  width: 118px !important;
+  width: 140px !important;
+}
+.work[data-open] .contactCol {
+  width: 12% !important;
+}
+.work[data-open] .purposeCol {
+  width: 15% !important;
 }
