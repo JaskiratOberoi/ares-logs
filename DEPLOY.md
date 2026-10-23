@@ -34,3 +34,29 @@ Vercel and other serverless hosts are not suitable: they have no persistent disk
 ## Changing staff accounts
 
 Accounts are seeded on first start from `app/src/lib/seed.ts`. Edit the `USERS` list and the password before the first run on the server, or add rows to the `users` table afterwards.
+
+## As deployed on the Ares Labs host (24 Oct 2026)
+
+The host already runs Caddy on ports 80/443 for other sites, so Ares Sales does not use the bundled `Caddyfile`/`docker-compose.yml`. It runs from `app/docker-compose.prod.yml`: compose project `ares-sales`, container `ares-sales-app`, bound to `127.0.0.1:3170` only, data in the `ares-sales_ares-sales-data` volume.
+
+```bash
+cd app && docker compose -f docker-compose.prod.yml up -d --build   # deploy or update
+docker compose -f docker-compose.prod.yml logs -f app                # logs
+```
+
+The route was added to the running Caddy through its admin API (route `@id` `ares-sales-logs` on the `:443` server). That is live now but is not in the Caddyfile; to make it survive a Caddy restart, add this block to the Caddyfile Caddy loads and run `caddy reload`:
+
+```caddyfile
+logs.ares-labs.com {
+	header {
+		Referrer-Policy strict-origin-when-cross-origin
+		X-Content-Type-Options nosniff
+		X-Frame-Options SAMEORIGIN
+	}
+	reverse_proxy localhost:3170 {
+		header_up X-Real-Ip {http.request.remote}
+	}
+}
+```
+
+DNS: `logs.ares-labs.com` must be a single `A` record to `122.161.198.159`. A Hostinger "subdomain" created under Websites adds records that point at Hostinger instead; delete that subdomain if it exists. Caddy obtains the certificate automatically once the name resolves here.
