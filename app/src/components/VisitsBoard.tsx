@@ -99,7 +99,7 @@ export function VisitsBoard({
               <col />
               <col className={`${styles.optional} ${styles.contactCol}`} style={{ width: "13%" }} />
               <col className={styles.purposeCol} style={{ width: "15%" }} />
-              <col className={styles.optional} style={{ width: 48 }} />
+              <col className={`${styles.optional} ${styles.unitsCol}`} style={{ width: 48 }} />
               <col className={styles.visitedCol} style={{ width: 180 }} />
               <col style={{ width: 40 }} />
             </colgroup>
@@ -265,7 +265,6 @@ export function VisitsBoard({
                 )
               ) : (
                 <div className={styles.grid} aria-busy="true">
-                  <div className="plate skeleton" />
                   <div className="plate skeleton" />
                   <div className="plate skeleton" />
                 </div>

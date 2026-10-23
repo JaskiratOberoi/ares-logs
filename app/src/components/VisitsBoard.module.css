@@ -98,7 +98,7 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
 .noPhotos {
@@ -120,11 +120,28 @@
   font-size: 16px;
 }
 .work[data-open] .visitedCol {
-  width: 140px !important;
+  width: 118px !important;
 }
 .work[data-open] .contactCol {
-  width: 12% !important;
+  width: 124px !important;
 }
 .work[data-open] .purposeCol {
-  width: 15% !important;
+  width: 110px !important;
+}
+.work[data-open] .unitsCol {
+  width: 44px !important;
+}
+.work[data-open] :global(table.board td),
+.work[data-open] :global(table.board th) {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.work[data-open] :global(table.board td.dept-cell) {
+  padding: 0;
+}
+.work[data-open] :global(table.board td.arrow-cell) {
+  padding: 0 10px 0 0;
+}
+.work[data-open] :global(table.board th.num) {
+  padding-right: 18px;
 }

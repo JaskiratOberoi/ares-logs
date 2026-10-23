@@ -1,0 +1,714 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T21:37:43+00:00",
+  "title": "Design System: Ares Sales",
+  "extensions": {
+    "colorMeta": {
+      "gold": {
+        "role": "primary",
+        "displayName": "Ares Gold",
+        "canonical": "oklch(75.0% 0.147 84.4)",
+        "tonalRamp": [
+          "#240000",
+          "#431400",
+          "#653600",
+          "#895900",
+          "#af7c00",
+          "#d6a219",
+          "#fec850",
+          "#ffe671"
+        ]
+      },
+      "gold-2": {
+        "role": "primary",
+        "displayName": "Gold Highlight",
+        "canonical": "oklch(81.4% 0.142 88.1)",
+        "tonalRamp": [
+          "#210000",
+          "#3f1800",
+          "#613900",
+          "#845b00",
+          "#a97f00",
+          "#d0a425",
+          "#f8cb56",
+          "#ffe976"
+        ]
+      },
+      "gold-deep": {
+        "role": "primary",
+        "displayName": "Gold Ink",
+        "canonical": "oklch(54.1% 0.109 87.4)",
+        "tonalRamp": [
+          "#1d0200",
+          "#3a1c00",
+          "#5b3c00",
+          "#7e5e00",
+          "#a2812b",
+          "#c8a654",
+          "#f0cd7a",
+          "#ffeb97"
+        ]
+      },
+      "gold-tint": {
+        "role": "primary",
+        "displayName": "Gold Tint",
+        "canonical": "oklch(95.8% 0.039 91.2)",
+        "tonalRamp": [
+          "#110a00",
+          "#2b230c",
+          "#4a422a",
+          "#6c6349",
+          "#8f866b",
+          "#b4aa8f",
+          "#dad1b4",
+          "#f8eed1"
+        ]
+      },
+      "gold-shadow": {
+        "role": "primary",
+        "displayName": "Gold Shadow",
+        "canonical": "oklch(60.9% 0.121 82.8)",
+        "tonalRamp": [
+          "#210000",
+          "#3f1800",
+          "#613900",
+          "#845b00",
+          "#a97e18",
+          "#d0a347",
+          "#f8ca6f",
+          "#ffe78d"
+        ]
+      },
+      "teal": {
+        "role": "secondary",
+        "displayName": "PATH Teal",
+        "canonical": "oklch(57.8% 0.092 199.7)",
+        "tonalRamp": [
+          "#00131a",
+          "#002f35",
+          "#005055",
+          "#007378",
+          "#2e979c",
+          "#5abdc1",
+          "#82e4e8",
+          "#a0ffff"
+        ]
+      },
+      "blue": {
+        "role": "secondary",
+        "displayName": "HOSP Blue",
+        "canonical": "oklch(49.1% 0.128 258.7)",
+        "tonalRamp": [
+          "#00003f",
+          "#001c60",
+          "#0e3f85",
+          "#3262ab",
+          "#5486d2",
+          "#78acfb",
+          "#9dd3ff",
+          "#baf1ff"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "CLIN Green",
+        "canonical": "oklch(57.4% 0.122 149.0)",
+        "tonalRamp": [
+          "#001500",
+          "#003200",
+          "#005318",
+          "#23763a",
+          "#4b9a5c",
+          "#70c080",
+          "#97e7a5",
+          "#b4ffc2"
+        ]
+      },
+      "plum": {
+        "role": "secondary",
+        "displayName": "DIST Plum",
+        "canonical": "oklch(47.2% 0.136 317.9)",
+        "tonalRamp": [
+          "#1f002e",
+          "#3d004d",
+          "#5f2370",
+          "#824695",
+          "#a869bb",
+          "#ce8ee2",
+          "#f6b4ff",
+          "#ffd1ff"
+        ]
+      },
+      "amber": {
+        "role": "tertiary",
+        "displayName": "Service Amber",
+        "canonical": "oklch(68.2% 0.162 58.7)",
+        "tonalRamp": [
+          "#320000",
+          "#550000",
+          "#7b1b00",
+          "#a34300",
+          "#cb6800",
+          "#f48d2a",
+          "#ffb458",
+          "#ffd278"
+        ]
+      },
+      "amber-ink": {
+        "role": "tertiary",
+        "displayName": "Amber Ink",
+        "canonical": "oklch(49.2% 0.115 60.0)",
+        "tonalRamp": [
+          "#280000",
+          "#480a00",
+          "#6c2e00",
+          "#925005",
+          "#b87436",
+          "#e0995c",
+          "#ffbf82",
+          "#ffdc9e"
+        ]
+      },
+      "amber-tint": {
+        "role": "tertiary",
+        "displayName": "Amber Tint",
+        "canonical": "oklch(96.0% 0.029 77.5)",
+        "tonalRamp": [
+          "#120901",
+          "#2c2214",
+          "#4b4131",
+          "#6d6151",
+          "#908473",
+          "#b5a997",
+          "#dccfbd",
+          "#faedda"
+        ]
+      },
+      "red": {
+        "role": "tertiary",
+        "displayName": "Fault Red",
+        "canonical": "oklch(55.1% 0.188 27.9)",
+        "tonalRamp": [
+          "#3d0000",
+          "#630000",
+          "#8c0000",
+          "#b61c1a",
+          "#e14b40",
+          "#ff7365",
+          "#ff9b8a",
+          "#ffb9a6"
+        ]
+      },
+      "red-tint": {
+        "role": "tertiary",
+        "displayName": "Red Tint",
+        "canonical": "oklch(93.7% 0.025 23.6)",
+        "tonalRamp": [
+          "#140706",
+          "#2f1f1e",
+          "#4f3d3c",
+          "#715e5c",
+          "#95817f",
+          "#bba5a3",
+          "#e1cbc9",
+          "#ffe8e6"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(21.1% 0.012 254.1)",
+        "tonalRamp": [
+          "#080b10",
+          "#20242a",
+          "#3e4349",
+          "#5f646a",
+          "#81878d",
+          "#a6abb2",
+          "#ccd2d9",
+          "#e9eff6"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "oklch(39.8% 0.023 255.7)",
+        "tonalRamp": [
+          "#050b15",
+          "#1d252f",
+          "#3a434f",
+          "#5b6471",
+          "#7d8795",
+          "#a1acba",
+          "#c7d2e1",
+          "#e4f0ff"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "oklch(50.1% 0.025 259.2)",
+        "tonalRamp": [
+          "#050b16",
+          "#1d2430",
+          "#3a4350",
+          "#5b6472",
+          "#7d8796",
+          "#a2acbb",
+          "#c7d2e2",
+          "#e5efff"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Signage White",
+        "canonical": "oklch(96.4% 0.007 97.2)",
+        "tonalRamp": [
+          "#0c0b08",
+          "#252420",
+          "#43423e",
+          "#64635f",
+          "#878682",
+          "#acaba6",
+          "#d2d1cc",
+          "#f0eeea"
+        ]
+      },
+      "ground-2": {
+        "role": "neutral",
+        "displayName": "Ground 2",
+        "canonical": "oklch(93.6% 0.009 99.9)",
+        "tonalRamp": [
+          "#0c0b07",
+          "#25241f",
+          "#43433d",
+          "#64635d",
+          "#878680",
+          "#acaba4",
+          "#d2d1ca",
+          "#f0efe8"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel White",
+        "canonical": "oklch(100.0% 0.000 342.2)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#424242",
+          "#636363",
+          "#868686",
+          "#ababab",
+          "#d1d1d1",
+          "#eeeeee"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "oklch(86.9% 0.012 96.3)",
+        "tonalRamp": [
+          "#0d0b06",
+          "#26241d",
+          "#44423b",
+          "#65635b",
+          "#88867e",
+          "#adaba2",
+          "#d3d1c8",
+          "#f1efe5"
+        ]
+      },
+      "rule-soft": {
+        "role": "neutral",
+        "displayName": "Rule Soft",
+        "canonical": "oklch(91.8% 0.011 95.1)",
+        "tonalRamp": [
+          "#0d0b06",
+          "#26241e",
+          "#44423c",
+          "#65635c",
+          "#88867f",
+          "#adaba3",
+          "#d3d1c9",
+          "#f1efe6"
+        ]
+      },
+      "rail": {
+        "role": "neutral",
+        "displayName": "Rail Charcoal",
+        "canonical": "oklch(28.1% 0.029 253.0)",
+        "tonalRamp": [
+          "#040c17",
+          "#1a2532",
+          "#384352",
+          "#586574",
+          "#7a8897",
+          "#9facbd",
+          "#c4d3e4",
+          "#e1f0ff"
+        ]
+      },
+      "rail-2": {
+        "role": "neutral",
+        "displayName": "Rail 2",
+        "canonical": "oklch(33.5% 0.029 248.7)",
+        "tonalRamp": [
+          "#030c17",
+          "#192531",
+          "#374451",
+          "#576573",
+          "#798897",
+          "#9dadbd",
+          "#c3d3e4",
+          "#e0f1ff"
+        ]
+      },
+      "rail-3": {
+        "role": "neutral",
+        "displayName": "Rail 3",
+        "canonical": "oklch(38.9% 0.040 254.3)",
+        "tonalRamp": [
+          "#020b1b",
+          "#162537",
+          "#344457",
+          "#54657a",
+          "#76889e",
+          "#9aadc4",
+          "#c0d3eb",
+          "#ddf1ff"
+        ]
+      },
+      "rail-text": {
+        "role": "neutral",
+        "displayName": "Rail Text",
+        "canonical": "oklch(86.2% 0.019 250.7)",
+        "tonalRamp": [
+          "#060c13",
+          "#1d252d",
+          "#3b434c",
+          "#5c646e",
+          "#7e8791",
+          "#a2acb7",
+          "#c8d2dd",
+          "#e6f0fb"
+        ]
+      },
+      "rail-muted": {
+        "role": "neutral",
+        "displayName": "Rail Muted",
+        "canonical": "oklch(75.0% 0.033 251.2)",
+        "tonalRamp": [
+          "#020c19",
+          "#182534",
+          "#354454",
+          "#556576",
+          "#78889a",
+          "#9cadc0",
+          "#c2d3e7",
+          "#dff1ff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "brand": {
+        "displayName": "Brand (Michroma)",
+        "purpose": "The ARES wordmark only. Never UI type."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Visit record blade h1; 24px on phones."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page titles in the 88px header; login tagline and card title."
+      },
+      "blade": {
+        "displayName": "Blade",
+        "purpose": "Detail panel blade h2, white on the department colour."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Form and photo section headings on a 1px rule."
+      },
+      "entry": {
+        "displayName": "Entry",
+        "purpose": "Customer name in a board row, city beneath at 12px."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Base text, inputs, buttons (800), nav blades (700). Tabular figures."
+      },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "Notes, counters, legend, hints, error notices."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, column headers, fact keys. The only label style."
+      },
+      "dept-code": {
+        "displayName": "Department Code",
+        "purpose": "PATH / HOSP / CLIN / DIST inside a department block."
+      },
+      "serial": {
+        "displayName": "Serial (Overpass Mono)",
+        "purpose": "Plate strip labels, serial numbers, record codes. Nowhere else."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-panel",
+        "value": "0 1px 2px rgba(21,25,30,.06), 0 10px 28px rgba(21,25,30,.08)",
+        "purpose": "The login card."
+      },
+      {
+        "name": "shadow-blade",
+        "value": "0 12px 32px rgba(21,25,30,.22), 0 2px 6px rgba(21,25,30,.12)",
+        "purpose": "Department blades on the login panel."
+      },
+      {
+        "name": "shadow-detail",
+        "value": "-8px 0 24px rgba(21,25,30,.06)",
+        "purpose": "The open visit detail panel casting left onto the board."
+      },
+      {
+        "name": "shadow-bottom-bar",
+        "value": "0 -6px 18px rgba(21,25,30,.22)",
+        "purpose": "Fixed phone nav bar."
+      },
+      {
+        "name": "shadow-button-gold",
+        "value": "inset 0 -2px 0 #a67b12, 0 2px 6px rgba(21,25,30,.16)",
+        "purpose": "Gold button plate edge; inset halves and button drops 1px on press."
+      },
+      {
+        "name": "shadow-button-rail",
+        "value": "inset 0 -2px 0 #0d141d, 0 2px 6px rgba(21,25,30,.18)",
+        "purpose": "Rail button plate edge."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 3px solid #d9a520; outline-offset: 2px",
+        "purpose": "Every focusable element; offset -3px inside blades and rows."
+      },
+      {
+        "name": "focus-halo-input",
+        "value": "0 0 0 3px #fbf1d4",
+        "purpose": "Input focus, paired with a gold border; replaces the outline."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The one easing for every transition."
+      },
+      {
+        "name": "t",
+        "value": "240ms",
+        "purpose": "Movement: blade slide, rise, arrow nudge, detail column open, progress bar."
+      },
+      {
+        "name": "t-fast",
+        "value": "140ms",
+        "purpose": "Exits and every colour, border, or background change."
+      },
+      {
+        "name": "blade-in",
+        "value": "x: 40px -> 0, opacity 0 -> 1, 240ms; exit x: 24px, 140ms",
+        "purpose": "Detail panel and record page enter from the right, the direction the arrow points."
+      },
+      {
+        "name": "rise",
+        "value": "y: 10px -> 0, opacity 0 -> 1, 240ms",
+        "purpose": "Content blocks settling into place."
+      },
+      {
+        "name": "plate-reveal",
+        "value": "clip-path inset(0 0 100% 0) -> inset(0), opacity .6 -> 1, 360ms; exit opacity 0 scale .98, 140ms",
+        "purpose": "A dropped photo fills its 4:3 frame top to bottom."
+      },
+      {
+        "name": "login-blade-stagger",
+        "value": "translateX(-24px) -> 0, 240ms, 60ms stagger",
+        "purpose": "Decorative department blades on the login panel."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all durations 0.01ms; login blades static",
+        "purpose": "No slide under prefers-reduced-motion; state colour changes stay."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "480px"
+      },
+      {
+        "name": "rail-collapse",
+        "value": "900px"
+      },
+      {
+        "name": "single-column",
+        "value": "1100px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Gold Button",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "The one live action per view: Log a visit, Save, Sign in.",
+      "html": "<button class=\"ds-btn ds-btn-gold\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"><path d=\"M12 5v14M5 12h14\"/></svg>Log a visit</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:44px;padding:0 20px;border:0;border-radius:6px;font-family: var(--font-overpass, Overpass, system-ui, sans-serif);font-weight:800;font-size:15px;cursor:pointer;white-space:nowrap;transition:transform 240ms cubic-bezier(.16,1,.3,1),box-shadow 240ms cubic-bezier(.16,1,.3,1),background-color 140ms cubic-bezier(.16,1,.3,1),color 140ms cubic-bezier(.16,1,.3,1);}.ds-btn-gold{background:var(--gold,#d9a520);color:var(--rail,#1f2a37);box-shadow:inset 0 -2px 0 var(--gold-shadow,#a67b12),0 2px 6px rgba(21,25,30,.16);}.ds-btn-gold:hover{background:var(--gold-2,#e8bc45);}.ds-btn-gold:active{transform:translateY(1px);box-shadow:inset 0 -1px 0 var(--gold-shadow,#a67b12),0 1px 3px rgba(21,25,30,.16);}.ds-btn:focus-visible{outline:3px solid var(--gold,#d9a520);outline-offset:2px;}"
+    },
+    {
+      "name": "Rail Button",
+      "kind": "button",
+      "refersTo": "button-rail",
+      "description": "Strong secondary action in charcoal, e.g. Take photo.",
+      "html": "<button class=\"ds-btn ds-btn-rail\">Take photo</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:44px;padding:0 20px;border:0;border-radius:6px;font-family: var(--font-overpass, Overpass, system-ui, sans-serif);font-weight:800;font-size:15px;cursor:pointer;transition:transform 240ms cubic-bezier(.16,1,.3,1),box-shadow 240ms cubic-bezier(.16,1,.3,1),background-color 140ms cubic-bezier(.16,1,.3,1);}.ds-btn-rail{background:var(--rail,#1f2a37);color:#fff;box-shadow:inset 0 -2px 0 #0d141d,0 2px 6px rgba(21,25,30,.18);}.ds-btn-rail:hover{background:var(--rail-2,#2b3845);}.ds-btn-rail:active{transform:translateY(1px);}.ds-btn:focus-visible{outline:3px solid var(--gold,#d9a520);outline-offset:2px;}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Quiet secondary: Cancel, Clear filters, Choose photos.",
+      "html": "<button class=\"ds-btn ds-btn-ghost\">Choose photos</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:44px;padding:0 20px;border-radius:6px;font-family: var(--font-overpass, Overpass, system-ui, sans-serif);font-weight:800;font-size:15px;cursor:pointer;transition:background-color 140ms cubic-bezier(.16,1,.3,1),border-color 140ms cubic-bezier(.16,1,.3,1);}.ds-btn-ghost{background:transparent;color:var(--ink,#15191e);border:1.5px solid var(--rule,#d6d4cb);}.ds-btn-ghost:hover{border-color:var(--ink-3,#5b6472);background:var(--panel,#fff);}.ds-btn:focus-visible{outline:3px solid var(--gold,#d9a520);outline-offset:2px;}"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Destructive text button; red is the only colour on it.",
+      "html": "<button class=\"ds-btn ds-btn-danger\">Delete</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:44px;padding:0 20px;border-radius:6px;font-family: var(--font-overpass, Overpass, system-ui, sans-serif);font-weight:800;font-size:15px;cursor:pointer;transition:background-color 140ms cubic-bezier(.16,1,.3,1);}.ds-btn-danger{background:transparent;color:var(--red,#c8322b);border:1.5px solid transparent;}.ds-btn-danger:hover{background:var(--red-tint,#fbe4e2);}.ds-btn:focus-visible{outline:3px solid var(--gold,#d9a520);outline-offset:2px;}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Labelled input with the gold focus halo.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-label\" for=\"ds-in\">Customer name</label><input id=\"ds-in\" class=\"ds-input\" placeholder=\"Apollo Diagnostics\"></div>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:6px;min-width:0;font-family: var(--font-overpass, Overpass, system-ui, sans-serif);}.ds-label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3,#5b6472);}.ds-input{width:100%;min-height:44px;padding:10px 14px;background:var(--panel,#fff);border:1.5px solid var(--rule,#d6d4cb);border-radius:6px;color:var(--ink,#15191e);font:inherit;font-size:15px;transition:border-color 140ms cubic-bezier(.16,1,.3,1),box-shadow 140ms cubic-bezier(.16,1,.3,1);}.ds-input::placeholder{color:var(--ink-3,#5b6472);}.ds-input:hover{border-color:var(--ink-3,#5b6472);}.ds-input:focus{outline:none;border-color:var(--gold,#d9a520);box-shadow:0 0 0 3px var(--gold-tint,#fbf1d4);}.ds-input[aria-invalid=true]{border-color:var(--red,#c8322b);}"
+    },
+    {
+      "name": "Rail Nav Blades",
+      "kind": "nav",
+      "refersTo": "nav-blade",
+      "description": "Sign blades in the charcoal rail; the active blade is gold.",
+      "html": "<nav class=\"ds-rail\"><a class=\"ds-blade\" data-active href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M4 6h16M4 12h16M4 18h10\"/></svg><span>Visits</span><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a><a class=\"ds-blade\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M4 6h16M4 12h16M4 18h10\"/></svg><span>Customers</span><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a><a class=\"ds-blade\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M4 6h16M4 12h16M4 18h10\"/></svg><span>Photos</span><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></nav>",
+      "css": ".ds-rail{width:232px;background:var(--rail,#1f2a37);font-family: var(--font-overpass, Overpass, system-ui, sans-serif);}.ds-blade{display:flex;align-items:center;gap:12px;height:54px;padding:0 24px;font-weight:700;font-size:15px;color:var(--rail-text,#c9d3de);text-decoration:none;border-top:1px solid var(--rail-2,#2b3845);transition:background-color 140ms cubic-bezier(.16,1,.3,1),color 140ms cubic-bezier(.16,1,.3,1);}.ds-blade:last-child{border-bottom:1px solid var(--rail-2,#2b3845);}.ds-blade svg:first-child{opacity:.85;flex:none;}.ds-blade svg:last-child{margin-left:auto;flex:none;transition:transform 240ms cubic-bezier(.16,1,.3,1);}.ds-blade:hover{background:var(--rail-2,#2b3845);color:#fff;}.ds-blade:hover svg:last-child{transform:translateX(4px);}.ds-blade[data-active]{background:var(--gold,#d9a520);color:var(--rail,#1f2a37);border-color:var(--gold,#d9a520);}.ds-blade[data-active] svg{opacity:1;}.ds-blade:focus-visible{outline:3px solid var(--gold,#d9a520);outline-offset:-3px;}"
+    },
+    {
+      "name": "Department Block",
+      "kind": "chip",
+      "refersTo": "dept-block",
+      "description": "Customer type as a solid colour block with its code in white; never a pill.",
+      "html": "<div class=\"ds-depts\"><span class=\"ds-dept\" style=\"--dept:var(--teal,#1b8a8f)\">PATH</span><span class=\"ds-dept\" style=\"--dept:var(--blue,#2f5fa8)\">HOSP</span><span class=\"ds-dept\" style=\"--dept:var(--green,#3c8c4f)\">CLIN</span><span class=\"ds-dept\" style=\"--dept:var(--plum,#7a3e8c)\">DIST</span></div>",
+      "css": ".ds-depts{display:flex;gap:6px;}.ds-dept{display:inline-flex;align-items:center;justify-content:center;width:84px;height:58px;color:#fff;font-family: var(--font-overpass, Overpass, system-ui, sans-serif);font-weight:800;letter-spacing:.1em;font-size:13px;background:var(--dept,var(--rail,#1f2a37));}"
+    },
+    {
+      "name": "Directory Board Row",
+      "kind": "custom",
+      "refersTo": "board-row",
+      "description": "A 58px directory entry: department block, name with city, facts, arrow. Selected rows tint gold.",
+      "html": "<table class=\"ds-board\"><tr tabindex=\"0\"><td class=\"ds-dept-cell\"><span class=\"ds-dept\" style=\"--dept:var(--teal,#1b8a8f)\">PATH</span></td><td><div class=\"ds-name\">Apollo Diagnostics<small>Hyderabad</small></div></td><td>Demo</td><td class=\"ds-num\">3</td><td>22 Oct 2026</td><td class=\"ds-arrow-cell\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></td></tr><tr aria-selected=\"true\"><td class=\"ds-dept-cell\"><span class=\"ds-dept\" style=\"--dept:var(--blue,#2f5fa8)\">HOSP</span></td><td><div class=\"ds-name\">KIMS Hospital<small>Secunderabad</small></div></td><td>Service<span class=\"ds-flag\">1 needs service</span></td><td class=\"ds-num\">6</td><td>21 Oct 2026</td><td class=\"ds-arrow-cell\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></td></tr></table>",
+      "css": ".ds-board{width:100%;border-collapse:collapse;background:var(--panel,#fff);border:1px solid var(--rule,#d6d4cb);table-layout:fixed;font-family: var(--font-overpass, Overpass, system-ui, sans-serif);font-size:15px;color:var(--ink,#15191e);font-variant-numeric:tabular-nums;}.ds-board td{padding:0 14px;height:58px;border-bottom:1px solid var(--rule-soft,#e6e4dc);vertical-align:middle;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:background-color 140ms cubic-bezier(.16,1,.3,1);}.ds-board tr:last-child td{border-bottom:0;}.ds-board tr{cursor:pointer;}.ds-board tr:hover td{background:var(--ground,#f4f3ee);}.ds-board tr[aria-selected=true] td{background:var(--gold-tint,#fbf1d4);}.ds-board tr:focus-visible{outline:3px solid var(--gold,#d9a520);outline-offset:-3px;}.ds-dept-cell{padding:0!important;width:84px;}.ds-dept{display:inline-flex;align-items:center;justify-content:center;width:100%;height:58px;color:#fff;font-weight:800;letter-spacing:.1em;font-size:13px;background:var(--dept);}.ds-name{font-size:17px;font-weight:700;line-height:1.2;}.ds-name small{display:block;font-size:12px;color:var(--ink-3,#5b6472);font-weight:400;margin-top:1px;}.ds-num{text-align:right;font-weight:700;}.ds-flag{display:block;color:var(--amber-ink,#8f4e00);font-weight:700;font-size:12px;line-height:1.2;margin-top:2px;}.ds-arrow-cell{width:40px;padding:0 14px 0 0!important;text-align:right;color:var(--ink-3,#5b6472);}.ds-arrow-cell svg{vertical-align:middle;transition:transform 240ms cubic-bezier(.16,1,.3,1);}.ds-board tr:hover .ds-arrow-cell svg{transform:translateX(4px);color:var(--ink,#15191e);}"
+    },
+    {
+      "name": "Blade Title",
+      "kind": "card",
+      "refersTo": "blade-title",
+      "description": "Panel or page header in the department colour, carrying the row's block straight into the panel.",
+      "html": "<header class=\"ds-blade-title\" style=\"--dept:var(--teal,#1b8a8f)\"><h2>Apollo Diagnostics</h2><p>Jubilee Hills, Hyderabad · 22 Oct 2026 · 14:30</p><span class=\"ds-blade-code\">VISIT <span class=\"ds-mono\">0112</span></span></header>",
+      "css": ".ds-blade-title{color:#fff;padding:22px 28px;background:var(--dept,var(--rail,#1f2a37));font-family: var(--font-overpass, Overpass, system-ui, sans-serif);}.ds-blade-title h2{margin:0 0 4px;font-size:24px;font-weight:800;line-height:1.15;letter-spacing:-.01em;}.ds-blade-title p{margin:0;opacity:.92;font-size:15px;}.ds-blade-code{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:4px 8px;font-size:13px;font-weight:600;background:rgba(255,255,255,.16);}.ds-mono{font-family: var(--font-overpass-mono, 'Overpass Mono', ui-monospace, monospace);font-size:12px;font-weight:600;letter-spacing:.02em;}"
+    },
+    {
+      "name": "Photo Plate",
+      "kind": "card",
+      "refersTo": "plate-strip",
+      "description": "Fixed 4:3 frame with a status-coloured label strip; untagged is white with a dashed amber rule.",
+      "html": "<div class=\"ds-plates\"><figure class=\"ds-plate\"><div class=\"ds-plate-img\"></div><figcaption class=\"ds-strip ds-strip-ares\"><span class=\"ds-code\">INST</span><b>Ares CL-900 · AR-2105-K</b></figcaption></figure><figure class=\"ds-plate\"><div class=\"ds-plate-img\"></div><figcaption class=\"ds-strip\"><span class=\"ds-code\">COMP</span><b>Roche Cobas c311</b></figcaption></figure><figure class=\"ds-plate\"><div class=\"ds-plate-img\"></div><figcaption class=\"ds-strip ds-strip-service\"><span class=\"ds-code\">SVC</span><b>Ares HM-5 · AR-0877-B</b></figcaption></figure><figure class=\"ds-plate\"><div class=\"ds-plate-img\"></div><figcaption class=\"ds-strip ds-strip-untagged\"><span class=\"ds-code\">TAG</span><b>Untagged</b></figcaption></figure></div>",
+      "css": ".ds-plates{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}.ds-plate{position:relative;margin:0;aspect-ratio:4/3;background:#dddcd3;border:1px solid #cfcec5;overflow:hidden;}.ds-plate-img{width:100%;height:100%;}.ds-strip{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:8px;padding:6px 9px;min-height:28px;background:var(--rail,#1f2a37);color:#fff;font-family: var(--font-overpass-mono, 'Overpass Mono', ui-monospace, monospace);font-size:11px;font-weight:500;line-height:1.25;letter-spacing:.04em;text-transform:uppercase;}.ds-strip b{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}.ds-code{flex:none;padding:1px 5px;font-weight:600;background:rgba(255,255,255,.18);}.ds-strip-ares{background:var(--gold,#d9a520);color:var(--rail,#1f2a37);}.ds-strip-ares .ds-code{background:rgba(31,42,55,.14);}.ds-strip-service{background:var(--amber,#e07b00);color:var(--rail,#1f2a37);}.ds-strip-service .ds-code{background:rgba(31,42,55,.14);}.ds-strip-untagged{background:#fff;color:var(--amber-ink,#8f4e00);border-top:2px dashed var(--amber,#e07b00);}.ds-strip-untagged .ds-code{background:var(--amber-tint,#fdf0dd);}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Department Signage",
+    "overview": "Ares Sales is navigated the way a hospital is: a colour-coded department blade tells you what kind of customer you are looking at before you read the name. The shell is enamel signage, a charcoal-navy rail with white and gold lettering, and the work ground is warm signage white, so the app reads as a wayfinding board rather than a SaaS dashboard. Every list is a directory board, every detail page opens under a blade in its department colour, and every photo is a fixed plate with a label strip screwed to its bottom edge.\n\nThe system is deliberately dense and flat. Surfaces are white panels on a warm ground with one-pixel rules; depth is reserved for the two things that physically stand off the wall, the detail panel and the login blades. Colour carries meaning and nothing else: four department colours for customer type, gold for whatever is live (the primary action, the active blade, selection, focus), amber for a unit that needs service, red for faults. Grey status pills, icon-only sidebars, and gradients on UI are rejected; the only gradient in the product is the metallic gold of the Ares mark itself.",
+    "keyCharacteristics": [
+      "Solid colour blocks with white codes (PATH, HOSP, CLIN, DIST) identify customer type at a glance",
+      "Gold is the single live-state colour; on light ground it is used as a fill, never as text",
+      "Square signage geometry everywhere except interactive controls, which carry a 6px radius",
+      "One typeface (Overpass), tabular figures everywhere, mono reserved for serials and record codes",
+      "One timing law: 240 ms, cubic-bezier(0.16, 1, 0.3, 1), with 140 ms exits and colour changes",
+      "Fixed grids: state restyles a row or plate, it never changes the column widths or the 4:3 frame"
+    ],
+    "rules": [
+      {
+        "name": "The One Gold Rule",
+        "body": "Gold means live. It is the primary action, the active blade, the selection, the focus ring, and the Ares-installed strip, and nothing else; decorative gold is reserved for the brand mark.",
+        "section": "colors"
+      },
+      {
+        "name": "The Gold-Is-Not-Type Rule",
+        "body": "On the light ground, gold is a fill or a ring, never lettering. Text that must read as gold uses Gold Ink (`gold-deep`).",
+        "section": "colors"
+      },
+      {
+        "name": "The Department Block Rule",
+        "body": "A customer type is always a solid block in its colour with the four-letter code in white, letter-spaced 0.1em. Never a tinted pill, outlined chip, or coloured text.",
+        "section": "colors"
+      },
+      {
+        "name": "The State Colour Rule",
+        "body": "Amber and red carry state and nothing else: amber for needs-service, red for faults, overdue, and invalid input. Neither is used for emphasis or decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono-For-Serials Rule",
+        "body": "Overpass Mono is set only on serial numbers, instrument codes, and record numbers. Everything else, including numbers in columns, is Overpass with tabular figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The Label Rule",
+        "body": "Every field label, column header, and fact key is the same object: 11px, 700, uppercase, 0.14em, `ink-3`. There is no second label style.",
+        "section": "typography"
+      },
+      {
+        "name": "The Fixed Column Rule",
+        "body": "State restyles the row (selection tint, flag line, hover) and never the grid. Column widths are set on the table, not by content.",
+        "section": "layout"
+      },
+      {
+        "name": "The Off-The-Wall Rule",
+        "body": "Shadows are for things that stand proud of the signage wall: the login card and blades, the open detail panel, the bottom bar, and the two filled buttons. Tables, cards, inputs, and plates are flat with a 1px rule.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do identify a customer type with a solid department block and its white four-letter code (PATH teal, HOSP blue, CLIN green, DIST plum), 84×58 in a row and full-height on phones.",
+      "Do give every view exactly one gold button and let gold carry every live state: active blade, selected row (`gold-tint`), the 3px gold focus ring, and text selection.",
+      "Do keep the primitives square and put the single 6px radius only on buttons, inputs, and the error notice.",
+      "Do set every label, column header, and fact key as 11px 700 uppercase at 0.14em in `ink-3`.",
+      "Do keep photos in a 4:3 plate with a status-coloured label strip, and show an untagged plate as white with a dashed amber top rule so an incomplete record is visible.",
+      "Do run every transition on the one law (240 ms, cubic-bezier(0.16, 1, 0.3, 1); 140 ms for exits and colour) and enter detail panels from the right, the direction the arrow points.",
+      "Do keep board columns fixed; let selection, hover, and flags restyle the row only.",
+      "Do use Overpass Mono only for serials, instrument codes, and record numbers, and tabular figures for all other numerals.",
+      "Do collapse the rail to a fixed 58px bottom blade bar at 900px and stack board rows with the block on the left edge."
+    ],
+    "donts": [
+      "Don't set gold as text on the light ground; use Gold Ink (`gold-deep`) for links and the caret.",
+      "Don't use gradients on UI surfaces; the metallic gradient lives only inside the Ares mark.",
+      "Don't render status as grey or tinted pills, outlined chips, or coloured text; status is a solid block, a solid strip, or an `amber-ink` / `red` flag line.",
+      "Don't use amber or red for anything other than needs-service, faults, overdue, and invalid input.",
+      "Don't add shadows to tables, cards, inputs, or plates; shadows belong to the login card and blades, the open detail panel, the bottom bar, and the two filled buttons.",
+      "Don't introduce a second typeface, a second label style, or icon-only navigation; blades carry an icon, a word, and an arrow.",
+      "Don't let the detail panel change the board's row grid, or let a plate leave its 4:3 frame."
+    ]
+  }
+}
