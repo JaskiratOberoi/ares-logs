@@ -1,0 +1,62 @@
+.form {
+  width: min(100%, 420px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-panel);
+}
+.title {
+  font-size: 28px;
+  font-weight: 800;
+}
+.sub {
+  color: var(--ink-2);
+  margin-top: -8px;
+}
+.form .btn {
+  margin-top: 6px;
+  height: 48px;
+}
+.spin {
+  width: 18px;
+  height: 18px;
+  animation: spin 0.9s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.demo {
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule-soft);
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.demo summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--ink);
+}
+.demo p {
+  margin: 10px 0 8px;
+}
+.demo ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+}
+.demo b {
+  font-weight: 600;
+  color: var(--ink);
+}
+@media (max-width: 900px) {
+  .form {
+    padding: 28px 20px;
+  }
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Ares Sales — Department Signage</title>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800&family=Overpass+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+html,body{width:1440px;height:900px;overflow:hidden;margin:0;background:#F4F3EE;color:#15191E;font:15px/1.4 Overpass,system-ui,sans-serif;font-variant-numeric:tabular-nums}
+*{box-sizing:border-box}
+.app{display:grid;grid-template-columns:232px 1fr;height:900px}
+.rail{background:#1F2A37;color:#F4F3EE;display:flex;flex-direction:column}
+.brand{height:88px;display:flex;align-items:center;gap:14px;padding:0 24px}
+.mark{width:40px;height:34px}
+.word{font-weight:800;letter-spacing:.28em;font-size:17px;color:#D9A520;line-height:1}
+.word small{display:block;font-weight:400;letter-spacing:.42em;font-size:9px;color:#9FB0C3;margin-top:5px}
+.nav{list-style:none;margin:16px 0 0;padding:0}
+.nav li{display:flex;align-items:center;justify-content:space-between;height:52px;padding:0 24px;font-weight:600;font-size:15px;color:#C9D3DE;border-top:1px solid #2B3845}
+.nav li:last-child{border-bottom:1px solid #2B3845}
+.nav li.on{background:#D9A520;color:#1F2A37}
+.nav li svg{width:18px;height:18px;flex:none}
+.rail .user{margin-top:auto;padding:20px 24px;border-top:1px solid #2B3845;font-size:13px;color:#9FB0C3}
+.rail .user b{display:block;color:#F4F3EE;font-size:14px}
+main{display:grid;grid-template-rows:88px 1fr;min-width:0}
+.top{display:flex;align-items:center;gap:16px;padding:0 32px;border-bottom:1px solid #DCDAD1;background:#F4F3EE}
+.top h1{font-size:26px;font-weight:800;margin:0 24px 0 0;letter-spacing:-.01em}
+.search{flex:1;max-width:420px;height:42px;border:1.5px solid #B9BBB2;background:#fff;border-radius:6px;padding:0 14px;display:flex;align-items:center;color:#6B7280}
+.sel{height:42px;border:1.5px solid #B9BBB2;background:#fff;border-radius:6px;padding:0 14px;display:flex;align-items:center;gap:10px;font-weight:600}
+.btn{margin-left:auto;height:44px;padding:0 20px;background:#D9A520;color:#1F2A37;font-weight:800;border-radius:6px;display:flex;align-items:center;gap:10px;box-shadow:0 2px 0 #A67B12}
+.work{display:grid;grid-template-columns:1fr 440px;min-height:0}
+.board{padding:28px 32px;min-width:0}
+.legend{display:flex;gap:18px;margin-bottom:18px;font-size:13px;font-weight:600;color:#4B5563}
+.legend i{display:inline-block;width:14px;height:14px;margin-right:6px;vertical-align:-2px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #D6D4CB}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6B7280;text-align:left;padding:12px 14px;border-bottom:1px solid #D6D4CB;font-weight:700}
+td{padding:0 14px;height:58px;border-bottom:1px solid #E6E4DC;vertical-align:middle}
+td.dept{padding:0;width:84px}
+td.dept span{display:flex;align-items:center;justify-content:center;height:58px;color:#fff;font-weight:800;letter-spacing:.1em;font-size:13px}
+.n{font-size:17px;font-weight:700}.n small{display:block;font-size:12px;color:#6B7280;font-weight:400}
+.cnt{text-align:right;font-weight:700}.when{color:#4B5563}
+tr.sel td{background:#FBF1D4}
+.flag{color:#B35F00;font-weight:700;font-size:13px}
+.arrow{width:18px;height:18px;color:#9CA3AF}
+.detail{background:#fff;border-left:1px solid #D6D4CB;display:flex;flex-direction:column}
+.blade{background:#1B8A8F;color:#fff;padding:22px 28px}
+.blade .k{font-size:11px;letter-spacing:.16em;font-weight:700;opacity:.85}
+.blade h2{margin:4px 0 2px;font-size:24px;font-weight:800;letter-spacing:-.01em}
+.blade p{margin:0;opacity:.9}
+.facts{padding:22px 28px;display:grid;grid-template-columns:1fr 1fr;gap:16px 20px;border-bottom:1px solid #E6E4DC}
+.facts .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6B7280;font-weight:700}
+.facts .v{font-weight:600;margin-top:2px}
+.photos{padding:22px 28px}
+.photos h3{margin:0 0 12px;font-size:14px;display:flex;justify-content:space-between}
+.photos h3 a{color:#B07F0E;font-weight:700;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.plate{aspect-ratio:4/3;background:#DDDCD3;border:1px solid #CFCEC5;position:relative}
+.plate b{position:absolute;left:0;right:0;bottom:0;background:#1F2A37;color:#fff;font:500 10px/1.2 "Overpass Mono",monospace;padding:5px 7px;letter-spacing:.04em}
+.plate.svc b{background:#E07B00;color:#1F2A37}
+.notes{padding:0 28px 24px;color:#4B5563;font-size:14px}
+</style></head><body>
+<div class="app">
+<aside class="rail">
+  <div class="brand"><svg class="mark" viewBox="0 0 40 34"><path d="M2 2h12l6 10 6-10h12L24 22v10h-8V22Z" fill="#D9A520"/></svg><div class="word">ARES<small>SALES</small></div></div>
+  <ul class="nav">
+    <li class="on">Visits <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+    <li>Customers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+    <li>Instruments <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+    <li>Photos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+    <li>Team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+  </ul>
+  <div class="user"><b>Rahul Krishnan</b>Sales Representative · Hyderabad</div>
+</aside>
+<main>
+  <div class="top"><h1>Visits</h1><div class="search">Search customer, contact or serial</div><div class="sel">This month ▾</div><div class="sel">All reps ▾</div><div class="btn">+ Log a visit</div></div>
+  <div class="work">
+    <section class="board">
+      <div class="legend"><span><i style="background:#1B8A8F"></i>PATH Pathology lab</span><span><i style="background:#2F5FA8"></i>HOSP Hospital</span><span><i style="background:#3C8C4F"></i>CLIN Clinic</span><span><i style="background:#7A3E8C"></i>DIST Distributor</span><span><i style="background:#E07B00"></i>Needs service on site</span></div>
+      <table>
+        <tr><th></th><th>Customer</th><th>Contact</th><th>Purpose</th><th style="text-align:right">Units</th><th>Visited</th><th></th></tr>
+        <tr><td class="dept"><span style="background:#1B8A8F">PATH</span></td><td><div class="n">Qugen Pathlabs<small>Banjara Hills, Hyderabad</small></div></td><td>Dr. S. Reddy</td><td>Follow-up</td><td class="cnt">4</td><td class="when">24 Oct 2026 · 10:15</td><td><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg></td></tr>
+        <tr class="sel"><td class="dept"><span style="background:#1B8A8F">PATH</span></td><td><div class="n">Apollo Diagnostics<small>Jubilee Hills, Hyderabad</small></div></td><td>Dr. Meera Nair</td><td>Demo · CL-900</td><td class="cnt">3</td><td class="when">22 Oct 2026 · 14:30</td><td><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="#15191E" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg></td></tr>
+        <tr><td class="dept"><span style="background:#2F5FA8">HOSP</span></td><td><div class="n">KIMS Hospital<small>Secunderabad</small></div></td><td>Mr. Anand Rao</td><td>Service <span class="flag">· HM-5 fault</span></td><td class="cnt">6</td><td class="when">21 Oct 2026 · 11:00</td><td><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg></td></tr>
+        <tr><td class="dept"><span style="background:#1B8A8F">PATH</span></td><td><div class="n">Vijaya Diagnostic Centre<small>Himayatnagar</small></div></td><td>Dr. P. Lakshmi</td><td>New lead</td><td class="cnt">2</td><td class="when">20 Oct 2026 · 16:45</td><td><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg></td></tr>
+        <tr><td class="dept"><span style="background:#2F5FA8">HOSP</span></td><td><div class="n">Yashoda Hospitals<small>Somajiguda</small></div></td><td>Ms. Kavya Iyer</td><td>Installation</td><td class="cnt">1</td><td class="when">18 Oct 2026 · 09:30</td><td><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg></td></tr>
+        <tr><td class="dept"><span style="background:#3C8C4F">CLIN</span></td><td><div class="n">Dr. Lal's Clinic<small>Kukatpally</small></div></td><td>Dr. R. Lal</td><td>Follow-up</td><td class="cnt">1</td><td class="when">17 Oct 2026 · 12:10</td><td><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg></td></tr>
+        <tr><td class="dept"><span style="background:#7A3E8C">DIST</span></td><td><div class="n">MedEquip Traders<small>Ameerpet</small></div></td><td>Mr. Farooq</td><td>Stock review</td><td class="cnt">5</td><td class="when">15 Oct 2026 · 15:00</td><td><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg></td></tr>
+        <tr><td class="dept"><span style="background:#1B8A8F">PATH</span></td><td><div class="n">Metropolis Healthcare<small>Begumpet</small></div></td><td>Dr. T. Menon</td><td>Demo · HM-5</td><td class="cnt">2</td><td class="when">14 Oct 2026 · 10:00</td><td><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 6l6 6-6 6"/></svg></td></tr>
+      </table>
+    </section>
+    <aside class="detail">
+      <div class="blade"><div class="k">PATHOLOGY LAB · VISIT 0142</div><h2>Apollo Diagnostics</h2><p>Jubilee Hills, Hyderabad · 22 Oct 2026, 14:30</p></div>
+      <div class="facts"><div><div class="k">Contact</div><div class="v">Dr. Meera Nair, Lab Director</div></div><div><div class="k">Purpose</div><div class="v">Demo · Ares CL-900</div></div><div><div class="k">Outcome</div><div class="v">Quote requested</div></div><div><div class="k">Next action</div><div class="v">Send quote by 29 Oct</div></div></div>
+      <div class="photos"><h3>Instruments on site · 3 photos <a>Open gallery</a></h3>
+        <div class="grid"><div class="plate"><b>ARES CL-900 · AR-2291-K</b></div><div class="plate"><b>COBAS c311 · 1178-442</b></div><div class="plate svc"><b>ARES HM-5 · SERVICE</b></div></div></div>
+      <div class="notes">Lab runs 400 samples/day on a Cobas c311; throughput ceiling reached. Director keen on CL-900 demo results; asked for AMC pricing alongside.</div>
+    </aside>
+  </div>
+</main>
+</div>
+</body></html>

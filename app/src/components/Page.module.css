@@ -1,0 +1,143 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 88px;
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--ground);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  margin-right: 8px;
+}
+.counters {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  color: var(--ink-2);
+  font-size: 14px;
+  font-weight: 600;
+}
+.counters span {
+  padding: 0 14px;
+  border-left: 1px solid var(--rule);
+}
+.counters span:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+.counters b {
+  color: var(--ink);
+  font-weight: 800;
+  font-size: 16px;
+  margin-right: 4px;
+}
+.counters .due b {
+  color: var(--amber-ink);
+}
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 18px 32px 0;
+  flex-wrap: wrap;
+}
+.filters :global(.input),
+.filters :global(.select) {
+  min-height: 42px;
+  width: auto;
+}
+.filters .search :global(.input) {
+  width: 100%;
+}
+.filters .search {
+  flex: 1 1 260px;
+  max-width: 420px;
+}
+.filters :global(.select) {
+  flex: 0 1 auto;
+  min-width: 150px;
+}
+.filters :global(input[type="date"]) {
+  flex: 0 1 auto;
+}
+.filters .clear {
+  margin-left: 4px;
+}
+
+.content {
+  padding: 24px 32px 48px;
+  min-width: 0;
+}
+
+.legend {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.legend i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 14px 16px;
+    min-height: 0;
+    gap: 10px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .counters {
+    flex-basis: 100%;
+    order: 3;
+    font-size: 13px;
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
+  .counters span {
+    padding: 0 10px;
+  }
+  .actions {
+    margin-left: auto;
+  }
+  .filters {
+    padding: 14px 16px 0;
+  }
+  .filters .search {
+    flex-basis: 100%;
+    max-width: none;
+  }
+  .filters :global(.select),
+  .filters :global(input[type="date"]) {
+    flex: 1 1 40%;
+    min-width: 0;
+  }
+  .content {
+    padding: 16px 16px 48px;
+  }
+}

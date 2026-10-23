@@ -1,0 +1,10 @@
+# HTTPS for logs.ares-labs.com with an automatic Let's Encrypt certificate.
+# Ports 80 and 443 on this machine must be reachable from the internet
+# (router port-forward if it sits behind a home/office connection).
+logs.ares-labs.com {
+	encode gzip
+	request_body {
+		max_size 64MB
+	}
+	reverse_proxy app:3000
+}

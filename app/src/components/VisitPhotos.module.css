@@ -1,0 +1,54 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.cell {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.caption {
+  font-size: 13px;
+  color: var(--ink-2);
+  line-height: 1.4;
+}
+.cellActions {
+  display: flex;
+  gap: 6px;
+}
+.editor {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+}
+.editorActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+.add {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+.add .btn {
+  align-self: flex-start;
+}
+.spin {
+  animation: spin 0.9s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

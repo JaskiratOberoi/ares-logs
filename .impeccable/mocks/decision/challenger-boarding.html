@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ares Sales - Records</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,600;62..125,700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root { --ground:#F2F2EE; --ink:#14161A; --muted:#8A8F98; --gold:#D9A520; --panel:#FFFFFF; --hair:#D7D7D0; --tint:#FBF3DC; --red:#C8322B;
+  --shadow:0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(20,22,26,.06); }
+* { box-sizing:border-box; }
+html,body { width:1440px; height:900px; overflow:hidden; margin:0; }
+body { background:var(--ground); color:var(--ink); font-family:"Archivo",sans-serif; font-size:14px; font-variant-numeric:tabular-nums; }
+.top { height:64px; background:var(--panel); border-bottom:1px solid var(--hair); display:grid; grid-template-columns:1fr 480px 1fr; align-items:center; padding:0 32px; }
+.brand { display:flex; align-items:baseline; gap:12px; }
+.brand b { font-stretch:125%; font-weight:700; letter-spacing:.3em; color:var(--gold); font-size:18px; }
+.brand span { font-stretch:125%; font-weight:600; letter-spacing:.3em; color:var(--muted); font-size:12px; }
+.search { height:38px; border:1px solid var(--hair); background:var(--ground); border-radius:6px; padding:0 14px; font:400 14px "Archivo",sans-serif; color:var(--ink); width:100%; outline:0; }
+.search::placeholder { color:var(--muted); }
+.right { display:flex; justify-content:flex-end; align-items:center; gap:16px; }
+.btn { height:38px; padding:0 18px; background:var(--gold); color:var(--ink); border:0; border-radius:6px; font:600 14px "Archivo",sans-serif; }
+.av { width:32px; height:32px; border-radius:50%; background:var(--ink); color:var(--panel); display:grid; place-items:center; font-size:11px; font-weight:600; letter-spacing:.04em; }
+main { height:836px; padding:32px; display:grid; grid-template-columns:3fr 2fr; gap:24px; align-items:start; }
+.panel { background:var(--panel); border-radius:8px; box-shadow:var(--shadow); }
+.head { height:52px; padding:0 16px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--hair); }
+.head h1 { margin:0; font-size:16px; font-weight:700; }
+.head span, .lbl { font-size:11px; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); font-weight:600; }
+table { width:100%; table-layout:fixed; border-collapse:separate; border-spacing:0; }
+th { height:40px; text-align:left; padding:0 8px; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); border-bottom:1px solid var(--hair); }
+td { height:44px; padding:0 8px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; border-bottom:1px solid var(--hair); font-size:13px; }
+th:first-child, td:first-child { padding-left:16px; }
+th:last-child, td:last-child { padding-right:16px; }
+td.c { font-weight:700; font-size:14px; }
+.n { text-align:right; }
+tr:last-child td { border-bottom:0; }
+tr.sel td { background:var(--tint); box-shadow:inset 0 3px 0 var(--gold), inset 0 -3px 0 var(--gold); border-bottom-color:transparent; }
+tr.chg td.st { color:var(--gold); font-weight:700; }
+.pass { position:relative; }
+.seg { position:relative; padding:14px 24px 15px; }
+.seg + .seg { border-top:1px dashed var(--hair); }
+.seg + .seg::before, .seg + .seg::after { content:""; position:absolute; top:-8px; width:16px; height:16px; border-radius:50%; background:var(--ground); }
+.seg + .seg::before { left:-8px; }
+.seg + .seg::after { right:-8px; }
+.v { margin-top:6px; font-size:18px; font-weight:600; line-height:1.25; }
+.v.big { font-size:22px; font-weight:700; }
+.v small { font-size:14px; font-weight:400; color:var(--muted); margin-left:6px; }
+.inst { margin-top:8px; display:grid; gap:7px; font:500 12.5px "JetBrains Mono",monospace; }
+.inst div { display:grid; grid-template-columns:1fr auto 118px; gap:14px; }
+.inst i { font-style:normal; color:var(--muted); }
+.inst .bad { color:var(--red); }
+.ph { display:flex; justify-content:space-between; align-items:baseline; }
+.ph a { font-size:13px; color:var(--muted); }
+.plates { margin-top:10px; display:grid; grid-template-columns:repeat(4,1fr); gap:10px; align-items:start; }
+.plate { aspect-ratio:4/3; background:#DDDDD6; border-radius:3px; }
+.cap { margin-top:6px; font:500 10px "JetBrains Mono",monospace; color:var(--muted); }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><b>ARES</b><span>SALES</span></div>
+  <input class="search" type="search" placeholder="Search customer, city or serial number">
+  <div class="right"><button class="btn">Log a visit</button><div class="av">RK</div></div>
+</header>
+<main>
+  <section class="panel">
+    <div class="head"><h1>Records</h1><span>9 visits &middot; Oct 2026</span></div>
+    <table>
+      <colgroup><col style="width:100px"><col style="width:241px"><col style="width:100px"><col style="width:96px"><col style="width:90px"><col style="width:50px"><col style="width:134px"></colgroup>
+      <thead><tr><th>Date</th><th>Customer</th><th>City</th><th>Contact</th><th>Purpose</th><th class="n">Units</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>23 Oct 2026</td><td class="c">Qugen Pathlabs</td><td>Hyderabad</td><td>Dr. S. Rao</td><td>New lead</td><td class="n">1</td><td>Logged</td></tr>
+        <tr class="sel"><td>22 Oct 2026</td><td class="c">Apollo Diagnostics</td><td>Hyderabad</td><td>Dr. M. Nair</td><td>Demo</td><td class="n">3</td><td>Quote requested</td></tr>
+        <tr><td>21 Oct 2026</td><td class="c">Lal PathLabs</td><td>Delhi</td><td>R. Kapoor</td><td>Follow-up</td><td class="n">2</td><td>Logged</td></tr>
+        <tr><td>20 Oct 2026</td><td class="c">KIMS Hospital</td><td>Secunderabad</td><td>Dr. A. Reddy</td><td>Service</td><td class="n">4</td><td>Resolved</td></tr>
+        <tr class="chg"><td>17 Oct 2026</td><td class="c">Metropolis</td><td>Mumbai</td><td>P. Iyer</td><td>Installation</td><td class="n">2</td><td class="st">Updated 2h ago</td></tr>
+        <tr><td>16 Oct 2026</td><td class="c">Sri Ramachandra Medical Centre</td><td>Chennai</td><td>Dr. K. Subbu</td><td>Demo</td><td class="n">1</td><td>Logged</td></tr>
+        <tr><td>15 Oct 2026</td><td class="c">Dr. Lal's Clinic</td><td>Pune</td><td>Dr. N. Lal</td><td>New lead</td><td class="n">0</td><td>Logged</td></tr>
+        <tr><td>14 Oct 2026</td><td class="c">Vijaya Diagnostic Centre</td><td>Hyderabad</td><td>S. Prasad</td><td>Follow-up</td><td class="n">2</td><td>Logged</td></tr>
+        <tr><td>12 Oct 2026</td><td class="c">Yashoda Hospitals</td><td>Hyderabad</td><td>Dr. V. Rao</td><td>Service</td><td class="n">3</td><td>Resolved</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <aside class="panel pass">
+    <div class="seg"><div class="lbl">Customer</div><div class="v big">Apollo Diagnostics<small>Hyderabad</small></div></div>
+    <div class="seg"><div class="lbl">Date &amp; time</div><div class="v big">22 Oct 2026 &middot; 14:30</div></div>
+    <div class="seg"><div class="lbl">Contact</div><div class="v">Dr. Meera Nair<small>Lab Director</small></div></div>
+    <div class="seg"><div class="lbl">Purpose</div><div class="v">Demo &ndash; Ares CL-900 chemistry analyzer</div></div>
+    <div class="seg"><div class="lbl">Outcome</div><div class="v">Quote requested, follow-up 29 Oct</div></div>
+    <div class="seg"><div class="lbl">Instruments on site</div>
+      <div class="inst">
+        <div><span>ARES CL-900</span><i>SN AR-2291-K</i><span>INSTALLED</span></div>
+        <div><span>ROCHE COBAS c311</span><i>SN 1178-442</i><span style="color:var(--muted)">COMPETITOR</span></div>
+        <div><span>ARES HM-5</span><i>SN AR-0912-B</i><span class="bad">NEEDS SERVICE</span></div>
+      </div>
+    </div>
+    <div class="seg"><div class="ph"><span class="lbl" style="color:var(--ink)">4 photos</span><a>View all</a></div>
+      <div class="plates">
+        <figure style="margin:0"><div class="plate"></div><div class="cap">AR-2291-K</div></figure>
+        <figure style="margin:0"><div class="plate"></div><div class="cap">1178-442</div></figure>
+        <figure style="margin:0"><div class="plate"></div><div class="cap">AR-0912-B</div></figure>
+        <figure style="margin:0"><div class="plate"></div><div class="cap">AR-2291-K</div></figure>
+      </div>
+    </div>
+  </aside>
+</main>
+</body>
+</html>

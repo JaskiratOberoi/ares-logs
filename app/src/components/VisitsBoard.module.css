@@ -1,0 +1,118 @@
+.work {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 0;
+  transition: grid-template-columns var(--t) var(--ease);
+  align-items: start;
+  flex: 1;
+}
+.work[data-open] {
+  grid-template-columns: minmax(0, 1fr) 440px;
+}
+
+@media (max-width: 1100px) {
+  .optional {
+    display: none;
+  }
+}
+
+.when {
+  color: var(--ink-2);
+}
+.time {
+  color: var(--ink-3);
+  margin-left: 4px;
+}
+
+.detail {
+  position: sticky;
+  top: 88px;
+  height: calc(100dvh - 88px);
+  overflow-y: auto;
+  background: var(--panel);
+  border-left: 1px solid var(--rule);
+  box-shadow: -8px 0 24px rgba(21, 25, 30, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+.bladeTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.bladeTop h2 {
+  margin: 0;
+}
+.close {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.16);
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color var(--t-fast) var(--ease);
+}
+.close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.close svg {
+  width: 18px;
+  height: 18px;
+}
+.facts {
+  padding: 22px 28px;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.due {
+  color: var(--ink-3);
+  font-weight: 400;
+}
+.overdue {
+  color: var(--red);
+  font-weight: 700;
+}
+.photos {
+  padding: 22px 28px 8px;
+}
+.photos h3 {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.photos h3 a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.photos h3 a svg {
+  width: 14px;
+  height: 14px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.noPhotos {
+  color: var(--ink-3);
+  font-size: 14px;
+}
+.notes {
+  padding: 16px 28px 28px;
+  color: var(--ink-2);
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.work[data-open] :global(table.board .name) {
+  font-size: 15px;
+}

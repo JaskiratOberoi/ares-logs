@@ -1,0 +1,86 @@
+.stage {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.drop {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 20px 22px;
+  background: var(--panel);
+  border: 2px dashed var(--rule);
+  transition:
+    border-color var(--t-fast) var(--ease),
+    background-color var(--t-fast) var(--ease);
+}
+.drop[data-over] {
+  border-color: var(--gold);
+  background: var(--gold-tint);
+}
+.dropText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1 1 220px;
+  color: var(--ink-2);
+  font-size: 14px;
+}
+.dropText b {
+  color: var(--ink);
+  font-size: 16px;
+}
+.dropActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 18px;
+  padding: 16px;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+}
+.preview {
+  align-self: start;
+}
+.progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 5px;
+  background: rgba(31, 42, 55, 0.3);
+}
+.progress i {
+  display: block;
+  height: 100%;
+  background: var(--gold);
+  transition: width var(--t) var(--ease);
+}
+.tags {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  align-content: start;
+}
+.wide {
+  grid-column: 1 / -1;
+}
+.remove {
+  justify-self: start;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 900px) {
+  .item {
+    grid-template-columns: 1fr;
+  }
+  .tags {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

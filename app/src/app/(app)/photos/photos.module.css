@@ -1,0 +1,52 @@
+.tabs {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--rule);
+}
+.tabs a {
+  padding: 10px 14px;
+  color: var(--ink-2);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+  transition:
+    color var(--t-fast) var(--ease),
+    border-color var(--t-fast) var(--ease);
+}
+.tabs a:hover {
+  color: var(--ink);
+}
+.tabs a[aria-current="page"] {
+  color: var(--ink);
+  border-color: var(--gold);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+}
+.cell {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: inherit;
+  text-decoration: none;
+}
+.cell:hover .meta b {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.meta {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+.meta b {
+  color: var(--ink);
+  font-size: 14px;
+}

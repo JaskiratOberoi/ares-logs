@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Ares Sales — Cap-Colour Rack</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+<style>
+html,body{width:1440px;height:900px;overflow:hidden;margin:0;background:#FAFAF8;color:#1C1F22;font:15px/1.4 Barlow,system-ui,sans-serif;font-variant-numeric:tabular-nums}
+*{box-sizing:border-box}
+.bar{height:72px;background:#E6E8E3;border-bottom:1px solid #C9CDC5;display:flex;align-items:center;gap:18px;padding:0 32px}
+.word{font-weight:700;letter-spacing:.3em;font-size:18px;color:#B8860B;display:flex;align-items:center;gap:12px}
+.word small{font-weight:500;letter-spacing:.2em;font-size:11px;color:#5F6660}
+.search{height:40px;width:380px;border:1px solid #B8BDB5;background:#fff;border-radius:6px;padding:0 14px;display:flex;align-items:center;color:#6B7280;margin-left:24px}
+.tabs{display:flex;gap:26px;margin-left:24px;font-weight:600;color:#5F6660}.tabs b{color:#1C1F22;border-bottom:3px solid #D4A017;padding-bottom:4px}
+.btn{margin-left:auto;height:42px;padding:0 20px;background:#D4A017;color:#1C1F22;font-weight:700;border-radius:999px;display:flex;align-items:center;box-shadow:inset 0 -2px 0 rgba(0,0,0,.18)}
+.avatar{width:36px;height:36px;border-radius:50%;background:#1C1F22;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
+.legend{height:56px;display:flex;align-items:center;gap:22px;padding:0 32px;background:#F1F2EE;border-bottom:1px solid #D9DCD6;font-weight:600;font-size:13px;color:#3F4540}
+.legend span{display:flex;align-items:center;gap:8px}.legend span.on{background:#fff;border:1px solid #C9CDC5;border-radius:999px;padding:5px 12px 5px 6px}
+.cap{width:18px;height:18px;border-radius:50%;background:var(--c);box-shadow:inset 0 3px 3px rgba(255,255,255,.55),inset 0 -3px 3px rgba(0,0,0,.22),0 1px 1px rgba(0,0,0,.2);flex:none}
+.work{display:grid;grid-template-columns:1fr 520px;height:772px}
+.list{padding:24px 32px;overflow:hidden}
+.list h1{font-size:24px;font-weight:700;margin:0 0 14px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #D9DCD6;border-radius:8px;overflow:hidden}
+th{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#5F6660;text-align:left;padding:12px 14px;background:#F4F5F2;border-bottom:1px solid #D9DCD6;font-weight:700}
+td{padding:0 14px;height:56px;border-bottom:1px solid #ECEDE9;vertical-align:middle}
+td.c{width:46px;padding-right:0}.n{font-weight:700;font-size:16px}.n small{display:block;font-weight:400;font-size:12px;color:#5F6660}
+tr.sel td{background:#FFF7DF}
+.tag{font:600 11px/1 "Barlow Semi Condensed",sans-serif;letter-spacing:.06em;background:#EEF0EC;border:1px solid #D9DCD6;padding:4px 7px;border-radius:3px;color:#3F4540;text-transform:uppercase}
+.when{color:#3F4540}.cnt{text-align:right;font-weight:700}
+.rack{background:#EEF0EC;border-left:1px solid #D9DCD6;padding:24px 28px;display:flex;flex-direction:column}
+.rack h2{margin:0;font-size:20px;font-weight:700}.rack p{margin:2px 0 18px;color:#5F6660}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px;background:#fff;border:1px solid #D9DCD6;border-radius:8px;padding:16px 18px;margin-bottom:18px}
+.facts .k{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#5F6660;font-weight:700}.facts .v{font-weight:600;margin-top:2px}
+.rack h3{font-size:14px;margin:0 0 10px;display:flex;justify-content:space-between}.rack h3 a{color:#8A6A05;font-weight:700;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tube{background:#fff;border:1px solid #D9DCD6;border-radius:6px;padding:8px 8px 10px;position:relative}
+.tube .cap{position:absolute;top:-9px;left:50%;transform:translateX(-50%);width:22px;height:22px;border:2px solid #fff}
+.tube .img{aspect-ratio:4/3;background:#DCDFD9;border-radius:3px;margin-top:6px}
+.tube b{display:block;margin-top:8px;font:600 11px/1.25 "Barlow Semi Condensed",sans-serif;letter-spacing:.04em;text-transform:uppercase;color:#1C1F22;background:#F6F7F4;border:1px dashed #C9CDC5;padding:5px 6px}
+.tube b span{display:block;color:#5F6660;font-weight:600}
+.note{margin-top:18px;background:#fff;border:1px solid #D9DCD6;border-radius:8px;padding:14px 16px;color:#3F4540;font-size:14px}
+</style></head><body>
+<div class="bar"><div class="word"><svg width="30" height="26" viewBox="0 0 40 34"><path d="M2 2h12l6 10 6-10h12L24 22v10h-8V22Z" fill="#D4A017"/></svg>ARES <small>SALES</small></div>
+<div class="search">Search customer, contact or serial</div><div class="tabs"><b>Visits</b><span>Customers</span><span>Instruments</span><span>Photos</span><span>Team</span></div>
+<div class="btn">+ Log a visit</div><div class="avatar">RK</div></div>
+<div class="legend">Status<span class="on"><i class="cap" style="--c:#D4A017"></i>Ares installed</span><span><i class="cap" style="--c:#5DADE2"></i>Competitor</span><span><i class="cap" style="--c:#8E7CC3"></i>Demo unit</span><span><i class="cap" style="--c:#3DAE7A"></i>New install</span><span><i class="cap" style="--c:#D64545"></i>Needs service</span><span><i class="cap" style="--c:#9AA0A6"></i>Archived</span><span style="margin-left:auto;color:#5F6660">This month · All reps</span></div>
+<div class="work">
+<section class="list"><h1>Visits · October 2026</h1>
+<table><tr><th></th><th>Customer</th><th>Contact</th><th>Purpose</th><th style="text-align:right">Units</th><th>Visited</th></tr>
+<tr><td class="c"><i class="cap" style="--c:#D4A017"></i></td><td><div class="n">Qugen Pathlabs<small>Banjara Hills, Hyderabad</small></div></td><td>Dr. S. Reddy</td><td><span class="tag">Follow-up</span></td><td class="cnt">4</td><td class="when">24 Oct · 10:15</td></tr>
+<tr class="sel"><td class="c"><i class="cap" style="--c:#8E7CC3"></i></td><td><div class="n">Apollo Diagnostics<small>Jubilee Hills, Hyderabad</small></div></td><td>Dr. Meera Nair</td><td><span class="tag">Demo</span></td><td class="cnt">3</td><td class="when">22 Oct · 14:30</td></tr>
+<tr><td class="c"><i class="cap" style="--c:#D64545"></i></td><td><div class="n">KIMS Hospital<small>Secunderabad</small></div></td><td>Mr. Anand Rao</td><td><span class="tag">Service</span></td><td class="cnt">6</td><td class="when">21 Oct · 11:00</td></tr>
+<tr><td class="c"><i class="cap" style="--c:#5DADE2"></i></td><td><div class="n">Vijaya Diagnostic Centre<small>Himayatnagar</small></div></td><td>Dr. P. Lakshmi</td><td><span class="tag">New lead</span></td><td class="cnt">2</td><td class="when">20 Oct · 16:45</td></tr>
+<tr><td class="c"><i class="cap" style="--c:#3DAE7A"></i></td><td><div class="n">Yashoda Hospitals<small>Somajiguda</small></div></td><td>Ms. Kavya Iyer</td><td><span class="tag">Installation</span></td><td class="cnt">1</td><td class="when">18 Oct · 09:30</td></tr>
+<tr><td class="c"><i class="cap" style="--c:#D4A017"></i></td><td><div class="n">Dr. Lal's Clinic<small>Kukatpally</small></div></td><td>Dr. R. Lal</td><td><span class="tag">Follow-up</span></td><td class="cnt">1</td><td class="when">17 Oct · 12:10</td></tr>
+<tr><td class="c"><i class="cap" style="--c:#5DADE2"></i></td><td><div class="n">MedEquip Traders<small>Ameerpet</small></div></td><td>Mr. Farooq</td><td><span class="tag">Stock review</span></td><td class="cnt">5</td><td class="when">15 Oct · 15:00</td></tr>
+<tr><td class="c"><i class="cap" style="--c:#8E7CC3"></i></td><td><div class="n">Metropolis Healthcare<small>Begumpet</small></div></td><td>Dr. T. Menon</td><td><span class="tag">Demo</span></td><td class="cnt">2</td><td class="when">14 Oct · 10:00</td></tr>
+<tr><td class="c"><i class="cap" style="--c:#D4A017"></i></td><td><div class="n">Sri Ramachandra Medical Centre<small>Gachibowli</small></div></td><td>Dr. V. Rao</td><td><span class="tag">Follow-up</span></td><td class="cnt">3</td><td class="when">12 Oct · 11:30</td></tr>
+</table></section>
+<aside class="rack"><h2>Apollo Diagnostics</h2><p>Jubilee Hills, Hyderabad · 22 Oct 2026, 14:30 · Visit 0142</p>
+<div class="facts"><div><div class="k">Contact</div><div class="v">Dr. Meera Nair, Lab Director</div></div><div><div class="k">Purpose</div><div class="v">Demo · Ares CL-900</div></div><div><div class="k">Outcome</div><div class="v">Quote requested</div></div><div><div class="k">Next action</div><div class="v">Send quote by 29 Oct</div></div></div>
+<h3>Instruments on site · 3 photos <a>Open rack</a></h3>
+<div class="grid">
+<div class="tube"><i class="cap" style="--c:#8E7CC3"></i><div class="img"></div><b>Ares CL-900<span>SN AR-2291-K</span></b></div>
+<div class="tube"><i class="cap" style="--c:#5DADE2"></i><div class="img"></div><b>Roche Cobas c311<span>SN 1178-442</span></b></div>
+<div class="tube"><i class="cap" style="--c:#D64545"></i><div class="img"></div><b>Ares HM-5<span>SN AR-0912-B</span></b></div>
+</div>
+<div class="note">Lab runs 400 samples/day on a Cobas c311; throughput ceiling reached. Director keen on CL-900 demo results; asked for AMC pricing alongside.</div>
+</aside></div>
+</body></html>
